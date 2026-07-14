@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Silao, Jonathan C.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap">
+<link rel = "stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <span class="name-mark">Silao, Jonathan C.</span>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#log">Log</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+ 
+<div class="wrap">
+ 
+    <section class="hero">
+        <span class="eyebrow">BSCS · Backend-leaning developer</span>
+        <h1 class="display">I build the parts underneath the parts people see.</h1>
+        <p class="lede">
+            Most of my work happens below the interface <strong>authentication, data models, the logic
+            that decides what's allowed to happen.</strong> I like systems that hold up once someone
+            actually starts using them.
+        </p>
+    </section>
+ 
+    <section id="about">
+        <div class="section-label">About</div>
+        <h2 class="section-title">A bit of background</h2>
+        <div class="about">
+            <p>
+                I'm an CS student who got into building software through a drag-and-drop CRUD tool early on
+                enough to teach a short class on it. Since then I've moved into writing backend systems by hand:
+                authentication flows, database design, and the unglamorous logic that keeps an app from breaking
+                the moment a real user touches it.
+            </p>
+            <p>
+                Right now most of my time goes into a full inventory and sales system — barcode-driven stock
+                tracking, role-based access, sales reporting, and a demand-prediction feature (Still in progress) built solo,
+                end to end.
+            </p>
+        </div>
+    </section>
+ 
+    <section id="work">
+        <div class="section-label">Currently building</div>
+        <h2 class="section-title">Featured project</h2>
+        <div class="project-card">
+            <span class="project-status">In progress</span>
+            <h3>Inventory &amp; Sales Prediction System</h3>
+            <p>
+                A full retail management system: role-based login for Admin, Manager, and Cashier accounts,
+                barcode scanning for stock in/out, a working point-of-sale checkout flow, sales reporting,
+                and a forecasting feature for restock planning.
+            </p>
+            <ul class="project-tags">
+                <li>ASP.NET Core MVC</li>
+                <li>Entity Framework Core</li>
+                <li>SQL Server</li>
+                <li>Session-based Auth</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </section>
+ 
+    <section id="log">
+        <div class="section-label">Changelog</div>
+        <h2 class="section-title">How I got here</h2>
+ 
+        <div class="log-entry">
+            <div class="log-date">2026 — now</div>
+            <div class="log-body">
+                <span class="tag">Building</span>
+                <p>Full inventory &amp; sales system in ASP.NET Core — auth, barcode scanning, POS, reporting, predictions.</p>
+            </div>
+        </div>
+        <div class="log-entry">
+            <div class="log-date">Earlier</div>
+            <div class="log-body">
+                <span class="tag">Learned</span>
+                <p>Sessions, password hashing, and why "it redirects to the wrong page" is rarely one bug — the hard way.</p>
+            </div>
+        </div>
+        <div class="log-entry">
+            <div class="log-date">Year 1</div>
+            <div class="log-body">
+                <span class="tag">Taught</span>
+                <p>Ran a short class on a drag-and-drop CRUD tool I built as a freshman.</p>
+            </div>
+        </div>
+    </section>
+ 
+    <footer id="contact">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Say hello</h2>
+        <p style="color:var(--ink-soft); max-width:50ch; margin:0;">
+            Open to conversations about backend development, systems work, or the project above.
+        </p>
+        <div class="contact-links">
+            <a href="https://github.com/Jonathan0618" target="_blank">github.com/Jonathan0618</a>
+        </div>
+        <p class="footer-note">Silao, Jonathan C.</p>
+    </footer>
+ 
+</div>
+ 
+</body>
