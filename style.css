@@ -76,6 +76,46 @@ body{
         padding: 76px 0 56px;
         border-bottom: 1px solid var(--line);
     }
+    /* ---------- Navbar avatar (click to expand, pure CSS) ---------- */
+    .photo-toggle {
+        display: none;
+    }
+    .name-mark-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .nav-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1.5px solid var(--line);
+        display: block;
+    }
+    .photo-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(20, 20, 18, 0.82);
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+        cursor: zoom-out;
+        padding: 24px;
+    }
+    .photo-overlay img {
+        max-width: min(420px, 80vw);
+        max-height: 80vh;
+        border-radius: 10px;
+        border: 3px solid var(--paper-raised);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+    .photo-toggle:checked ~ .photo-overlay {
+        display: flex;
+    }
+
     .eyebrow {
         font-family: 'IBM Plex Mono', monospace;
         font-size: .78rem;
